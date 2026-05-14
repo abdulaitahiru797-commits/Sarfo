@@ -1,0 +1,59 @@
+<DOCtype html>
+<html>
+    <head><meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josephine Sarfo.com</title>
+    <style>
+        body { font-family: sans-serif; margin: 0; padding: 20px; background: #f4f4f4; text-align: center; }
+        
+        /* 1. Designed Circle for Profile Picture */
+        .profile-container {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 20px;
+            border-radius: 50%; /* Makes it a circle */
+            border: 5px solid #3498db; /* Designed border */
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .profile-container img { width: 100%; height: 100%; object-fit: cover; }
+
+        /* 2. Responsive Grid for Works and Videos */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: 20px auto;
+        }
+        .gallery-item { background: white; padding: 10px; border-radius: 8px; }
+        .gallery-item img, .gallery-item video { width: 100%; border-radius: 4px; }
+    </style>
+</head>
+<body>
+
+    <!-- Profile Section -->
+    <div class="profile-container">
+        <img src="profile-picture.jpg" alt="Profile Picture">
+    </div>
+    <h1>Josephine Sarfo</h1>
+    <p>Creative & Professional Designer</p>
+
+    <!-- Work Gallery: Pictures -->
+    <h2>My Works</h2>
+    <div class="gallery">
+        <div class="gallery-item"><img src="jjj1.jpg" alt="Work 1"><h2>Favorite designed dress</h2></div>
+        <div class="gallery-item"><img src="jjj2.jpg" alt="Work 2"><h2>2nd Best designed dress</h2></div>
+    </div>
+
+    <!-- Video Section: Working Process -->
+    <h2>Watch Me Work</h2>
+    <div class="gallery">
+        <div class="gallery-item">
+            <video controls>
+                <source src="First - Trim.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+</body>
